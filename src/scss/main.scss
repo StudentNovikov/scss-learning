@@ -1,8 +1,105 @@
-$gray_color: rgb(240, 240, 240);
+@import './clear.scss';
+$line_height : 40px;
+$list_font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+%tpl_times{
+    font-family: 'Times New Roman', Times, serif;
+}
+@mixin fontz($font_size){
+    font-size: $font_size
+}
 
 body{
-    background: $gray_color;
-    h1{
-        font-size: 30px;
+	background: #e8e8e8;
+	color: #273d46;
+}
+
+.container{
+	max-width: 1190px;
+	margin: 100px auto 0 auto;
+	background: url(../../src/img/ellipse_1_copy_4.png) right top/cover no-repeat;	
+}
+
+.inner{
+	opacity: 1;
+	margin: 0 auto;
+	width: 820px;
+}
+
+.category{
+	opacity: 0.6;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	line-height: $line_height;
+	text-align: center;
+	margin-top: 62px;
+}
+
+h1{
+	@extend %tpl_times;
+	@include fontz(36px);
+	line-height: 50px;
+	text-align: center;
+	margin: 0 38px;
+}
+
+img{
+	padding: 80px 0;
+}
+
+p{
+	@extend %tpl_times;
+    @include fontz(24px);
+    line-height: $line_height;
+	margin-bottom: 64px; 
+	opacity: 0.8;
+}
+
+.description{
+	margin: 0 35px 60px 35px;
+}
+
+ul{
+	margin-bottom: 50px;
+}
+
+ul{
+    li{
+        font-family: $list_font;
+        font-size: $line_height / 2;
+        line-height: 36px;
+        padding-left: 35px;
+        background: url('../../src/img/check_icon_37.png') left 10px no-repeat;
+        &.italic{
+            font-style:italic;
+        }
+        &.green{
+            color: #80b7b3;
+        }
+        &.line-through{
+            text-decoration: line-through;
+        }        
+        &.li-secondary{
+            opacity: 0.3;
+        }
+    }	
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.btn-main{
+	padding:17px 30px;
+	background-color: rgba(128,183,179,0.54);
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	border-radius: 35px;
+}
+
+.btn-main {
+    span{
+        padding-right: 30px;
+        background:url(../../src/img/shape_2_9.png) right center no-repeat;    
     }
 }
