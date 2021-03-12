@@ -1,8 +1,1 @@
-$gray_color: rgb(240, 240, 240);
-
-body{
-    background: $gray_color;
-    h1{
-        font-size: 30px;
-    }
-}
+@import './clear.scss';
