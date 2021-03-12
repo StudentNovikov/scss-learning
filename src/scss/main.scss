@@ -1,1 +1,30 @@
 @import './clear.scss';
+
+@font-face {
+	font-family: 'cool_font';
+	src: url('../../src/fonts/dampfplatz_shadow_black.eot');
+	src: local('☺'), url('../../src/fonts/dampfplatz_shadow_black.woff') format('woff'), url('../../src/fonts/dampfplatz_shadow_black.ttf') format('truetype'), url('../../src/fonts/dampfplatz_shadow_black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+%bebas_font{
+    font-family: 'Bebas Neue', cursive;
+} 
+
+h1,h4{
+    @extend %bebas_font;
+}
+
+h1{
+    font-size: 102px;
+}
+
+h4{
+    font-size: 40px;
+}
+
+h3{
+    font-family: 'cool_font';
+    font-size: 150px;
+}
