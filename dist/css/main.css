@@ -71,4 +71,54 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.wrapper {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #445162;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 40px 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .header__body .main-header {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header .container .header__body .main-header__list {
+  padding-top: 40px;
+}
+.header .container .header__body .list {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header .container .header__body .list .list__item {
+  background: url(../../src/img/check_icon_348.png) 0 1px no-repeat;
+  margin: 0px 0px 15px 0px;
+  padding: 0px 0px 0px 36px;
+}
+.header .container .header__body .list .list__item:last-child {
+  margin: 0;
+}
+.header .container .header__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.what-is-flex {
+  background-color: #fff;
+}
+
 /*# sourceMappingURL=main.css.map */
