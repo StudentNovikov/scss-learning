@@ -71,37 +71,4 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.container {
-  background-color: #eee;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2fr 1fr 200px 1fr;
-  row-gap: 20px;
-  column-gap: 35px;
-}
-
-.item {
-  padding: 30px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  color: aliceblue;
-  border: 2px black dotted;
-}
-.item:nth-child(odd) {
-  background-color: #995454;
-}
-.item:nth-child(even) {
-  background-color: #549982;
-}
-.item.item_big {
-  grid-column-end: span 2;
-  grid-row-end: span 2;
-}
-.item.item_tall {
-  grid-row-end: span 2;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=clear.css.map */
