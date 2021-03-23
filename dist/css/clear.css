@@ -71,35 +71,4 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 30px;
-  background-color: #aaa;
-  height: 100%;
-}
-body .container {
-  display: flex;
-  height: 100vh;
-  background-color: #ddd;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-body .container .spoiler {
-  max-width: 700px;
-  margin-left: 70px;
-}
-body .container .spoiler .spoiler__header {
-  padding: 10px;
-  background-color: #777;
-  color: #fff;
-  display: block;
-  cursor: pointer;
-}
-body .container .spoiler .spoiler__text {
-  display: none;
-}
-body .container .spoiler .spoiler__text.show {
-  display: block;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=clear.css.map */
