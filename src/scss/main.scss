@@ -1,1 +1,95 @@
 @import './clear.scss';
+@import './poopup.scss';
+@import './burger.scss';
+
+body{
+    background: rgb(69, 114, 155);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    .container{
+        width: 1020px;
+        margin: 0 auto;
+        background-color: rgba(241, 234, 194, 0.699);
+      
+        .section-name{
+            font-size: 30px;
+            font-style: italic;
+            padding:30px;
+        }
+
+        .tabs{            
+            margin: 0px 50px;
+            border-radius: 7px;
+            .tabs__head{                
+                display:flex;
+                justify-content: space-around;
+                .tabs__header{                    
+                    padding: 7px 0;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    color:rgb(255, 255, 255);
+                    font-size: 30px;
+                    line-height: 30px;
+                    z-index: 2;
+                }    
+            }
+            
+            .tabs__body{
+                position: relative;
+            }
+
+            .tabs__text{
+                tab-size: 20px;
+                line-height: 20px;
+                padding: 15px;
+                display:none;
+            }
+
+            .tabs__text:target{
+                display:block;
+            }
+            
+            .tabs__text::before{
+                content:'';
+                height: 50px;
+                width: 33.333%;
+                position: absolute;
+                top:-50px;
+                left:0;
+            }
+
+            .tabs__text:nth-child(1){
+                background-color: rgb(222, 101, 233);
+            }
+            .tabs__text:nth-child(1):before{               
+                background-color: rgb(222, 101, 233);
+            }
+
+            .tabs__text:nth-child(2){
+                background-color: rgb(132, 233, 101);
+            }
+            .tabs__text:nth-child(2):before{
+                left: 33.333%;
+                background-color: rgb(132, 233, 101);
+            }
+
+            .tabs__text:nth-child(3){
+                background-color: rgb(233, 101, 134);
+            }
+            .tabs__text:nth-child(3):before{
+                left:66.666%;
+                background-color: rgb(233, 101, 134);
+            }
+        }
+
+        @media(max-width:1120px){
+            width: 860px;
+        }
+
+        @media(max-width:920px){
+            width: 680px;
+        }
+    }
+
+    
+}
