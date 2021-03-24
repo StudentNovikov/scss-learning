@@ -5,12 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/862bd45d98.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../dist/css/main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Scss</h1>
+    <div class="container">
+        <h2 class="section-name">Tabs:</h2>
+        <div class="tabs">
+            <div class="tabs__head">
+                <a href="#tab1" class="tabs__header">header #1</a>
+                <a href="#tab2" class="tabs__header">header #2</a>
+                <a href="#tab3" class="tabs__header">header #3</a>
+            </div>
+            <div class="tabs__body">
+                <div id="tab1" class="tabs__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, quam
+                    dignissimos
+                    molestiae mollitia voluptas culpa, praesentium iusto qui nihil incidunt pariatur eaque ipsa tenetur
+                    perspiciatis totam quas. Blanditiis, vero eaque?</div>
+                <div id="tab2" class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+                    repellat
+                    amet? Dolores reiciendis, doloremque qui numquam repudiandae unde molestias soluta magnam
+                    laboriosam, eaque non fugiat, vero quas voluptatum veniam. Voluptatum consectetur iste iure veniam
+                    architecto obcaecati nesciunt! Omnis, iure voluptates?Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dignissimos, repellat
+                    amet? Dolores reiciendis, doloremque qui numquam repudiandae unde molestias soluta magnam
+                    laboriosam, eaque non fugiat, vero quas voluptatum veniam. Voluptatum consectetur iste iure veniam
+                    architecto obcaecati nesciunt! Omnis, iure voluptates?</div>
+                <div id="tab3" class="tabs__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ipsam,
+                    officiis
+                    delectus atque possimus asperiores laboriosam provident eligendi ipsa vel iste, sit nulla dicta
+                    quis. Suscipit ab adipisci harum voluptas ducimus! Nostrum delectus aliquam est quas nihil nam vero
+                    repudiandae, doloremque unde! Explicabo nulla cupiditate excepturi veniam rerum dolorum aliquam.
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-name">Popup:</h2>
+        <a href="#" class="popup__btn">Show popup</a>
+
+        <div class="popup">
+            <div class="popup__container">
+                <div class="popup__body">
+                    <div class="popup__message">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur expedita necessitatibus
+                        eius,
+                        tenetur eligendi temporibus cum odit eaque porro vitae blanditiis doloremque dolorum unde
+                        officiaillum alias minima cupiditate soluta obcaecati! Quis exercitationem corporis minima
+                        debitis
+                        voluptates magnam minus officiis quaerat suscipit nostrum recusandae quas asperiores deserunt,
+                        dolor
+                        repudiandae sequi?
+                    </div>
+                </div>
+                <button class="popup__close">
+                    &times;
+                </button>
+            </div>
+        </div>
+
+        <h2 class="section-name">Burger menu:</h2>
+    </div>
+
+    <navbar class="burger">
+        <div class="burger__logo">
+            <span class="main-logo">
+                <i class="fas fa-meteor"></i>
+            </span>
+            <span class="burger__toggler">
+                <i class="fas fa-hamburger"></i>
+            </span>
+        </div>
+        <ul class="burger__menu">
+            <li class="burger__item">Menu</li>
+            <li class="burger__item burger__item_active">Options</li>
+            <li class="burger__item">Logout</li>
+        </ul>
+    </navbar>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

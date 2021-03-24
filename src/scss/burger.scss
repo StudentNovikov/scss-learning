@@ -1,0 +1,57 @@
+$mobile: 'max-width: 600px';
+
+.burger{
+    display:flex;
+    justify-content: space-around;
+    font-size: 24px;
+    background: rgb(182, 64, 172);  
+    padding:5px 0; 
+    .burger__logo{
+        display:flex;
+        justify-content: space-between;
+        font-size: 50px;
+        color:bisque;
+        .burger__toggler{
+            display: none;
+
+            @media($mobile){
+                display:block;               
+            }
+        }  
+
+        @media($mobile){
+            padding:0 30px;
+        }
+    }
+    .burger__menu{
+        display: flex;
+        justify-content: space-between;
+        line-height: 50px;
+
+        .burger__item{
+            color:bisque;
+            cursor: pointer;
+            padding: 0 30px;
+            &.burger__item_active{
+                color:rgb(121, 215, 238);
+            }
+
+            &:hover{
+               opacity: 0.6;
+            }
+        }
+
+        @media($mobile){
+            flex-direction: column;   
+            display:none;
+        }
+
+        &.show{
+            display:block;
+        }
+    }
+
+    @media($mobile){
+        flex-direction: column;
+    }
+}
