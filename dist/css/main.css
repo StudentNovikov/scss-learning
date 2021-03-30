@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -69,6 +70,156 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("../../src/fonts/icons.ttf?d4cv7z") format("truetype"), url("../../src/fonts/icons.woff?d4cv7z") format("woff"), url("../../src/fonts/icons.svg?d4cv7z#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-group:before {
+  content: "";
+}
+
+.icon-insta:before {
+  content: "";
+}
+
+.icon-fb:before {
+  content: "";
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  color: #21243D;
+  font-size: 40px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.menu {
+  color: #000;
+  padding-top: 27px;
+}
+.menu .menu__column {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+}
+.menu .menu__column .menu__burger {
+  z-index: 2;
+  display: none;
+  transform: rotateX(0deg);
+  transition: transform 0.5s ease;
+}
+.menu .menu__column .menu__burger.menu__burger-clicked {
+  transform: rotateX(180deg);
+}
+@media (max-width: 560px) {
+  .menu .menu__column .menu__burger {
+    display: block;
+    float: right;
+    padding-right: 10px;
+  }
+}
+.menu .menu__column .menu__list {
+  flex-basis: 236px;
+  margin: 0 60px;
+}
+.menu .menu__column .menu__list.list {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu__column .menu__list.list a {
+  color: #000;
+}
+@media (max-width: 560px) {
+  .menu .menu__column .menu__list.list {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.97;
+    transform: translateY(-120%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+}
+.menu .menu__column .menu__list.list .list__item {
+  margin: 30px 0;
+}
+.menu .menu__column .menu__list.list.list-show {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.hi .hi__row {
+  display: flex;
+  justify-content: space-between;
+}
+.hi .hi__row .hi__column {
+  flex: 0 0 500px;
+}
+.hi .hi__row .hi__column .hi__header {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  margin-top: 18px;
+}
+.hi .hi__row .hi__column .hi__text {
+  margin: 40px 0 40px 0;
+}
+.hi .hi__row .hi__column .hi__btn {
+  margin-top: 28px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  background: #FF6464;
+  padding: 10px 20px;
+  height: 47px;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+.hi .hi__row .hi__img {
+  width: 100%;
+  flex-basis: 250px;
+  height: 100%;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,1 +1,132 @@
 @import './clear.scss';
+@import './icon_font.scss';
+
+$font_heebo: 'Heebo', sans-serif;
+$font_color: #21243D;
+$display_mobile: 'max-width: 560px';
+
+body{
+    font-family: $font_heebo;
+    color: $font_color;
+
+    font-size: 40px;   
+}
+
+.text{
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.menu{
+    color:#000;
+    padding-top: 27px;
+
+    .menu__column{
+
+        display: flex;
+        justify-content: flex-end;        
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+
+        .menu__burger{
+            z-index: 2;
+            display:none;
+            transform: rotateX(0deg);
+            transition: transform 0.5s ease;
+            &.menu__burger-clicked{
+                transform: rotateX(180deg);
+            }       
+            @media($display_mobile){
+                display:block;
+                float: right;
+                padding-right: 10px;
+            }
+        }
+    
+        .menu__list{
+            flex-basis: 236px;
+            margin:0 60px;
+            &.list{
+                 display:flex;
+                 justify-content: space-between;
+                 a{
+                    color:#000; 
+                 }
+                     
+                @media($display_mobile){
+                    margin:0;
+                    position:fixed;
+                    top:0;
+                    left:0;
+                    width: 100%;
+                    background-color: #fff;
+                    opacity: 0.97;
+                    transform: translateY(-120%);
+                    display:flex;
+                    flex-direction: column;
+                    align-items:center;
+                    font-size: 40px;
+                    padding-top: 60px;
+                }
+
+                .list__item{
+                    margin: 30px 0;
+                }
+    
+                &.list-show{
+                    transform: translateY(0);
+                    transition: all 0.3s ease;                
+                }
+             }
+        }
+    }   
+}
+
+.hi{
+    .hi__row{
+        display:flex;
+        justify-content: space-between;
+
+        .hi__column{
+            flex: 0 0 500px;
+
+            .hi__header{
+                font-weight: bold;
+                font-size: 44px;
+                line-height: 60px;
+                margin-top: 18px;
+            }
+        
+            .hi__text{
+               margin: 40px 0 40px 0;
+            }
+
+            .hi__btn{       
+                margin-top: 28px;         
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 29px;
+                color: #FFFFFF;
+                background: #FF6464;
+                padding:10px 20px;
+                height: 47px;
+                border-radius: 2px;
+                text-transform: capitalize;
+            }
+        }
+
+        .hi__img{
+            width: 100%;
+            flex-basis: 250px;
+            height: 100%;
+        }
+    }
+
+}
+
+.container{
+    max-width: 860px;
+    margin:0 auto;
+}
+
