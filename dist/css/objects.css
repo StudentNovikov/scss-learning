@@ -1,17 +1,124 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |     font-family: $font_heebo;
- *   |                  ^^^^^^^^^^^
- *   '
- *   src\scss\objects.scss 2:18  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      font-family: $font_heebo;\d\a   \2502                   ^^^^^^^^^^^\a   \2575 \a   src\\scss\\objects.scss 2:18  root stylesheet";
+body {
+  font-family: "Heebo", sans-serif;
+  color: #21243D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 856px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 680px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 580px;
+    padding: 0 18px;
+  }
+}
+.container.container-small {
+  max-width: 681px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header {
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  .header {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.header-secondary {
+  font-size: 30px;
+  line-height: 44px;
+}
+@media (max-width: 700px) {
+  .header-secondary {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+
+.title {
+  font-size: 22px;
+  line-height: 60px;
+}
+@media (max-width: 700px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+.year {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 18px;
+  height: 25px;
+  padding: 0px 12px;
+  border-radius: 16px;
+  color: #fff;
+  margin-right: 22px;
+}
+.year.year-secondary {
+  background: #142850;
+}
+.year.year-primary {
+  background: #FF7C7C;
+}
+@media (max-width: 700px) {
+  .year {
+    font-size: 16px;
+  }
+}
+
+.heading-one {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.heading-two {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.footer {
+  padding-bottom: 54px;
+}
+.footer .footer__icons {
+  display: flex;
+  padding-top: 51px;
+  font-size: 30px;
+  justify-content: center;
+  padding-bottom: 22px;
+}
+.footer .footer__icons .footer_icon {
+  padding: 0 17.5px;
+}
+.footer .footer__copyright {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=objects.css.map */
