@@ -14,7 +14,7 @@
 }
 .blog-items .item {
   padding-top: 32px;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
 }
 .blog-items .item__info {
   padding-top: 8px;
@@ -30,8 +30,8 @@
 .blog-items .item__info .item__delimiter {
   margin: 14px;
 }
-.blog-items .item__info .item__info-secondary {
-  color: #8695A4;
+.blog-items .item__info .item__info_secondary {
+  color: #8695a4;
 }
 .blog-items .item__text {
   padding-top: 10px;
