@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.work__header {
+    div {
+        font-weight: 900;
+    }
+    padding-top: 54px;
+    padding-bottom: 22px;
+    @media ($display_mobile) {
+        padding-top: 24px;
+        padding-bottom: 0;
+    }
+}
+
+.works {
+    .work {
+        .work__text {
+            padding-right: 0;
+        }
+    }
+}
