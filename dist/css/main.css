@@ -71,4 +71,130 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.header_small {
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer, body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header_small {
+  font-weight: bold;
+  font-size: 16px;
+  color: #363838;
+}
+
+.header {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(54, 56, 56, 0.9033);
+}
+.menu__body {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__list {
+  display: flex;
+}
+.menu__list:first-child {
+  padding-left: 32px;
+}
+.menu__item {
+  padding-right: 65px;
+  padding-left: 15px;
+}
+.menu__burger {
+  background: #fff;
+}
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  font-size: 14px;
+  font-weight: 600;
+  color: #707070;
+}
+.footer .footer__info {
+  background: #dfdfdf;
+}
+.footer .footer__wrapper {
+  padding: 60px 0 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__header {
+  padding-bottom: 14px;
+}
+.footer .footer__text {
+  color: #5a5a5a;
+  padding-bottom: 16px;
+  font-size: 16px;
+  max-width: 470px;
+  line-height: 27px;
+}
+.footer .footer__email {
+  font-size: 14px;
+  padding-left: 30px;
+  background: url(../../src/icons/envelope.svg) no-repeat;
+  background-position: 0px 3px;
+  color: #363838;
+  line-height: 28px;
+  display: block;
+  padding-bottom: 22px;
+}
+.footer .footer__copyright {
+  font-size: 16px;
+  background: #363838;
+  padding: 42px 0;
+  text-align: center;
+  color: #a1a1a1;
+}
+.footer .footer__form > * {
+  border-radius: 21px;
+}
+.footer .form__input {
+  border: 1px solid rgba(57, 55, 55, 0.7);
+  padding: 6px 10px;
+  background: inherit;
+  font-size: 16px;
+  line-height: 28px;
+  color: #a1a1a1;
+}
+.footer .form__button {
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fffff0;
+  background-color: #363838;
+}
+.footer .footer__item {
+  padding-bottom: 15px;
+  line-height: 28px;
+}
+
 /*# sourceMappingURL=main.css.map */
